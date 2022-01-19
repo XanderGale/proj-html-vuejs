@@ -1,5 +1,6 @@
 // Font import
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import './style/variables.scss';
 
 // Reset
 *{
@@ -16,4 +17,22 @@ body{
 .container{
     width: 60%;
     margin: auto;
+}
+
+// Buttons
+.custom-btn{
+    font-size: 10px;
+    border-radius: 25px;
+    border-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.bg-yelloworange{
+    background-color: $yelloworange;
+    color: white;
+}
+.bg-purpleheart{
+    background-color: $purpleheart;
+    color: white;
 }

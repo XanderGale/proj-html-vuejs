@@ -1,15 +1,17 @@
 <template>
-    <nav>
-        <img src="../assets/images/logo_seo_w_1x.png" alt="Seo Logo">
+    <div class="container">
+        <nav>
+            <img src="../assets/images/logo_seo_w_1x.png" alt="Seo Logo">
 
-        <ul>
-            <li v-for="(link, index) in links" :key="index" @click=" activeIndex = index" :class="{ 'active' : index === activeIndex }">
-                <a :href="link.url">{{ link.text }}</a>
-            </li>
-        </ul>
+            <ul>
+                <li v-for="(link, index) in links" :key="index" @click=" activeIndex = index" :class="{ 'active' : index === activeIndex }">
+                    <a :href="link.url">{{ link.text }}</a>
+                </li>
+            </ul>
 
-        <button>GET IN TOUCH NOW</button>
-    </nav>
+            <button class="custom-btn bg-yelloworange">Get in touch now</button>
+        </nav>
+    </div>
 </template>
 
 <script>
@@ -53,6 +55,12 @@ export default {
 @import '../style/variables.scss';
 
 nav{
+    position: fixed;
+    top: 10px;
+    left: 20%;
+
+    width: 60%;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -86,15 +94,8 @@ nav{
         }
     }
     button{
-        background-color: $yelloworange;
-        color: white;
-        font-size: 10px;
-        padding: 10px;
-        border-radius: 25px;
-        border-style: none;
         margin-left: 12px;
-        cursor: pointer;
-        font-weight: 600;
+        padding: 10px;
     }
 }
         

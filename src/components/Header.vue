@@ -1,19 +1,22 @@
 <template>
     <header>
         <div class="container">
-            <Navbar/>
+            <div class="inner-header-content">
+                <h2>SEM Campaigns Made Simple With Avada</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ornare erat. Curabitur pulvinar elit.</p>
+                
+                <button class="custom-btn bg-yelloworange">Buy avada now</button>
+
+                <button class="custom-btn bg-purpleheart">Contact us</button>
+
+            </div>
         </div>
     </header>
 </template>
 
 <script>
-import Navbar from './Navbar.vue';
-
 export default {
   name: 'Header',
-  components: {
-      Navbar,
-  }
 };
 </script>
 
@@ -26,7 +29,21 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         padding: 20px 0;
-        height: 80vh;
+        color: white;
+        .inner-header-content{
+            width: 50%;
+            margin: 200px 0;
+            h2{
+                font-size: 2.4rem;
+            }
+            p{
+                margin: 15px 0;
+            }
+            button{
+                margin-right: 20px;
+                padding: 12px 15px;
+            }
+        }
     }
 
 </style>
