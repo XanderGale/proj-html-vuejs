@@ -55,7 +55,7 @@ export default {
 @import '../style/variables.scss';
 
 nav{
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 20%;
 
