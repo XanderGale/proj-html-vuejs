@@ -116,7 +116,7 @@ export default {
                         position: absolute;
                         font-size: 0.9rem;
                         top: 10px;
-                        left: -10px;
+                        left: -9px;
                     }
                     .price{
                         font-weight: 600;
