@@ -90,8 +90,8 @@ export default {
         }
         button{
             width: 150px;
-            padding: 15px;
-            margin-top: 50px;
+            padding: 10px;
+            margin: 50px;
         }
     }
 </style>

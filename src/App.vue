@@ -5,6 +5,7 @@
     <SectionMeetSEO/>
     <SectionServices/>
     <SectionWork/>
+    <SectionPlans/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Navbar from './components/Navbar.vue';
 import SectionMeetSEO from './components/SectionMeetSEO.vue';
 import SectionServices from './components/SectionServices.vue';
 import SectionWork from './components/SectionWork.vue';
+import SectionPlans from './components/SectionPlans.vue';
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     SectionMeetSEO,
     SectionServices,
     SectionWork,
+    SectionPlans,
   },
 };
 </script>
