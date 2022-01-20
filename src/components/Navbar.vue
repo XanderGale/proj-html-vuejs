@@ -57,9 +57,9 @@ export default {
 nav{
     position: absolute;
     top: 10px;
-    left: 20%;
+    left: 15%;
 
-    width: 60%;
+    width: 70%;
 
     display: flex;
     flex-flow: row nowrap;

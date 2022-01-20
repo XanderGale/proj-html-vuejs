@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: 'SectionTitle',
+    name: 'InnerSectionTitle',
     props: ['h2Text', 'pText']
 }
 </script>
@@ -27,6 +27,8 @@ export default {
         }
         p{
             margin: 15px 0;
+            font-size: 0.9rem;
+            font-weight: lighter;
         }
     }
 </style>

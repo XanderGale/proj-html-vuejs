@@ -3,6 +3,8 @@
     <Navbar />
     <Header />
     <SectionMeetSEO/>
+    <SectionServices/>
+    <SectionWork/>
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import Header from "./components/Header.vue";
 import Navbar from './components/Navbar.vue';
 import SectionMeetSEO from './components/SectionMeetSEO.vue';
+import SectionServices from './components/SectionServices.vue';
+import SectionWork from './components/SectionWork.vue';
 
 export default {
   name: "App",
@@ -17,6 +21,8 @@ export default {
     Navbar,
     Header,
     SectionMeetSEO,
+    SectionServices,
+    SectionWork,
   },
 };
 </script>

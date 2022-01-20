@@ -37,7 +37,8 @@ export default {
                 font-size: 2.4rem;
             }
             p{
-                margin: 15px 0;
+                margin: 25px 0;
+                font-weight: lighter;
             }
             button{
                 margin-right: 20px;
