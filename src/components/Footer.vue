@@ -100,8 +100,9 @@ export default {
                 list-style-type: none;
                 li{
                     display: inline-block;
-                    margin: auto 5px;
+                    margin: auto 10px;
                     cursor: pointer;
+                    font-size: 20px;
                     &:hover,
                     &:active{
                         color: $yelloworange;

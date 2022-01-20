@@ -9,6 +9,7 @@
     <SectionWork/>
     <SectionPlans/>
     <SectionNews/>
+    <SectionClients/>
     <SectionContactUs/>
 
     <!-- Footer -->
@@ -26,6 +27,7 @@ import SectionWork from './components/SectionWork.vue';
 import SectionPlans from './components/SectionPlans.vue';
 import SectionNews from './components/SectionNews.vue';
 import SectionContactUs from './components/SectionContactUs.vue';
+import SectionClients from './components/SectionClients.vue';
 
 // Footer
 import Footer from './components/Footer.vue';
@@ -41,6 +43,7 @@ export default {
     SectionPlans,
     SectionNews,
     SectionContactUs,
+    SectionClients,
     Footer,
   },
   data: function(){
