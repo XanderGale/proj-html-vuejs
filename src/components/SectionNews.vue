@@ -16,8 +16,6 @@
                 </div>
             </div>
 
-            <div class="blackopacity"></div>
-
             <button class="custom-btn bg-yelloworange">go to news</button>
         </div>
     </section>

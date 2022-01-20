@@ -5,6 +5,8 @@
                 h2-text="start your free consultation"
                 p-text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
             />
+
+            <div class="blackopacity"></div>
             
             <button class="custom-btn bg-yelloworange">Contact us</button>
         </div>
@@ -34,6 +36,7 @@ export default {
         background-repeat: no-repeat;
         color: white;
         text-align: center;
+        z-index: -2;
         .blackopacity{
             position: absolute;
             top: 0;
@@ -41,8 +44,8 @@ export default {
             width: 100%;
             height: 100%;
             background-color: black;
-            opacity: 1;
-            z-index: 10;
+            opacity: 0.3;
+            z-index: -1;
         }
         button{
             padding: 10px 15px;
