@@ -4,7 +4,7 @@
             <img src="../assets/images/logo_seo_w_1x.png" alt="Seo Logo">
 
             <ul>
-                <li v-for="(link, index) in links" :key="index" @click=" activeIndex = index" :class="{ 'active' : index === activeIndex }">
+                <li v-for="(link, index) in linksArray" :key="index" @click=" activeIndex = index" :class="{ 'active' : index === activeIndex }">
                     <a :href="link.url">{{ link.text }}</a>
                 </li>
             </ul>
@@ -17,37 +17,7 @@
 <script>
 export default {
     name: "Navbar",
-    data: function() {
-        return {
-            activeIndex: 0,
-            links: [
-                {
-                    text: 'home',
-                    url: '#',
-                },
-                {
-                    text: 'who we are',
-                    url: '#',
-                },
-                {
-                    text: 'what we do',
-                    url: '#',
-                },
-                {
-                    text: 'where we work',
-                    url: '#',
-                },
-                {
-                    text: 'careers',
-                    url: '#',
-                },
-                {
-                    text: 'news',
-                    url: '#',
-                },
-            ]
-        }
-    },
+    props: ['linksArray', 'activeIndex']
 }
 </script>
 

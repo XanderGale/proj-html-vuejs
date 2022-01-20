@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar :linksArray="links" :activeIndex="activeIndex"/>
     <Header />
 
     <!-- Sections -->
@@ -10,6 +10,9 @@
     <SectionPlans/>
     <SectionNews/>
     <SectionContactUs/>
+
+    <!-- Footer -->
+    <Footer :linksArray="links" :activeIndex="activeIndex"/>
   </div>
 </template>
 
@@ -24,6 +27,9 @@ import SectionPlans from './components/SectionPlans.vue';
 import SectionNews from './components/SectionNews.vue';
 import SectionContactUs from './components/SectionContactUs.vue';
 
+// Footer
+import Footer from './components/Footer.vue';
+
 export default {
   name: "App",
   components: {
@@ -35,7 +41,39 @@ export default {
     SectionPlans,
     SectionNews,
     SectionContactUs,
+    Footer,
   },
+  data: function(){
+    return {
+      activeIndex: 0,
+      links: [
+        {
+          text: 'home',
+          url: '#',
+        },
+        {
+          text: 'who we are',
+          url: '#',
+        },
+        {
+          text: 'what we do',
+          url: '#',
+        },
+        {
+          text: 'where we work',
+          url: '#',
+        },
+        {
+          text: 'careers',
+          url: '#',
+        },
+        {
+          text: 'news',
+          url: '#',
+        },
+      ]
+    }
+  }
 };
 </script>
 
